@@ -1,0 +1,264 @@
+{
+  "id": "057d5779-5f49-4c29-a80e-0ce56c121b94",
+  "version": "2.0",
+  "name": "Quality Engineer Test Case by Rey",
+  "url": "https://www.pokemon.com/us/",
+  "tests": [{
+    "id": "ce91f262-7bf9-4273-a926-9541666c0b8e",
+    "name": "pikachu detailed",
+    "commands": [{
+      "id": "073bfab5-7245-4f6b-bea7-98e5df5e9607",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.pokemon.com/us/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4c2face6-af59-41e7-890b-27cda591e286",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.title_pokeball",
+      "targets": [
+        ["css=.title_pokeball", "css:finder"],
+        ["xpath=//li[2]/a/span[3]", "xpath:position"],
+        ["xpath=//span[contains(.,'Pokédex')]", "xpath:innerText"]
+      ],
+      "value": "PoPokédex"
+    }, {
+      "id": "dec3a8d8-d054-4c6c-8130-dfe1d0976282",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.title_pokeball",
+      "targets": [
+        ["css=.title_pokeball", "css:finder"],
+        ["xpath=//li[2]/a/span[3]", "xpath:position"],
+        ["xpath=//span[contains(.,'Pokédex')]", "xpath:innerText"]
+      ],
+      "value": "60000"
+    }, {
+      "id": "54be2c7a-7141-4145-b0c6-c6007439d88b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.title_pokeball",
+      "targets": [
+        ["css=.title_pokeball", "css:finder"],
+        ["xpath=//li[2]/a/span[3]", "xpath:position"],
+        ["xpath=//span[contains(.,'Pokédex')]", "xpath:innerText"]
+      ],
+      "value": "Pokédex"
+    }, {
+      "id": "9adb5ac0-9f36-436e-965b-5510ec9ac6e4",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "id=loadMore",
+      "targets": [
+        ["id=loadMore", "id"],
+        ["linkText=Load more Pokémon", "linkText"],
+        ["css=#loadMore", "css:finder"],
+        ["xpath=//a[@id='loadMore']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '')])[95]", "xpath:href"],
+        ["xpath=//section[5]/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Load more Pokémon')]", "xpath:innerText"]
+      ],
+      "value": "93.40625,27.875"
+    }, {
+      "id": "dd5bfa5d-ee2b-41e0-86ec-bc4a47bf2620",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=#loadMore > .button-lightblue",
+      "targets": [
+        ["css=#loadMore > .button-lightblue", "css:finder"],
+        ["xpath=//a[@id='loadMore']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Load more Pokémon')]", "xpath:innerText"]
+      ],
+      "value": "60000"
+    }, {
+      "id": "1332706b-7e4a-4d9f-822e-0c1078ff53d2",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=#loadMore > .button-lightblue",
+      "targets": [
+        ["css=#loadMore > .button-lightblue", "css:finder"],
+        ["xpath=//a[@id='loadMore']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Load more Pokémon')]", "xpath:innerText"]
+      ],
+      "value": "Load more Pokémon"
+    }, {
+      "id": "0568fb2d-c438-48b8-9f20-2d41adb9b997",
+      "comment": "",
+      "command": "click",
+      "target": "css=#loadMore > .button-lightblue",
+      "targets": [
+        ["css=#loadMore > .button-lightblue", "css:finder"],
+        ["xpath=//a[@id='loadMore']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Load more Pokémon')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd4f48ae-7669-4032-ac68-f9e0e5a65e35",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,2093.333251953125)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3c428de2-bbb5-4867-8521-aaf5f97aab23",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.animating:nth-child(25) h5",
+      "targets": [
+        ["css=.animating:nth-child(25) h5", "css:finder"],
+        ["xpath=//li[25]/div/h5", "xpath:position"],
+        ["xpath=//h5[contains(.,'Pikachu')]", "xpath:innerText"]
+      ],
+      "value": "60000"
+    }, {
+      "id": "d0b2eabc-a242-4013-8e93-7f923cb1270b",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.animating:nth-child(25) h5",
+      "targets": [
+        ["css=.animating:nth-child(25) h5", "css:finder"],
+        ["xpath=//li[25]/div/h5", "xpath:position"],
+        ["xpath=//h5[contains(.,'Pikachu')]", "xpath:innerText"]
+      ],
+      "value": "Pikachu"
+    }, {
+      "id": "9000ddad-320d-44e2-aadd-67f16e2820c4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.animating:nth-child(25) img",
+      "targets": [
+        ["css=.animating:nth-child(25) img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/025.png')]", "xpath:img"],
+        ["xpath=//li[25]/figure/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f5c9f0e9-501c-49da-898c-b5cc3a2221cc",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=.pokemon-stats-info:nth-child(2)",
+      "targets": [
+        ["css=.pokemon-stats-info:nth-child(2)", "css:finder"],
+        ["xpath=//section[3]/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "01634c55-080b-4b6a-9346-03983acf3326",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.pokedex-pokemon-pagination-title > div",
+      "targets": [
+        ["css=.pokedex-pokemon-pagination-title > div", "css:finder"],
+        ["xpath=//div[6]/section/div[2]/div", "xpath:position"]
+      ],
+      "value": "Pikachu #025"
+    }, {
+      "id": "75427e54-73b2-4038-b6ee-5bce93a065fa",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.active > .version-x",
+      "targets": [
+        ["css=.active > .version-x", "css:finder"],
+        ["xpath=//p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'Pikachu that can generate powerful electricity have cheek sacs that are extra soft and super stretchy.')]", "xpath:innerText"]
+      ],
+      "value": "Pikachu that can generate powerful electricity have cheek sacs that are extra soft and super stretchy."
+    }, {
+      "id": "9c67b7b0-ed6b-49d3-8937-05492de24132",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.pokedex-pokemon-details-right > h3",
+      "targets": [],
+      "value": "Versions:"
+    }, {
+      "id": "7d60bc60-a39a-4ed3-9973-35883f2e8391",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.pokemon-ability-info:nth-child(1)",
+      "targets": [
+        ["css=.pokemon-ability-info:nth-child(1)", "css:finder"],
+        ["xpath=//div[2]/div/div[4]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6e5c07e-978d-452d-a8ef-4d2a43674303",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.pokemon-stats-info:nth-child(2)",
+      "targets": [
+        ["css=.pokemon-stats-info:nth-child(2)", "css:finder"],
+        ["xpath=//section[3]/div/div[2]", "xpath:position"]
+      ],
+      "value": "Stats"
+    }, {
+      "id": "af8e35ec-4ca8-463b-bbfd-b518dea2fd5f",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Explore More Pokémon",
+      "targets": [
+        ["linkText=Explore More Pokémon", "linkText"],
+        ["css=.content-block-half > .button", "css:finder"],
+        ["xpath=//a[contains(text(),'Explore More Pokémon')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/us/pokedex/')])[11]", "xpath:href"],
+        ["xpath=//section[5]/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Explore More Pokémon')]", "xpath:innerText"]
+      ],
+      "value": "Explore More Pokémon"
+    }, {
+      "id": "ce0c4724-ee01-4d54-865e-2a423e49a21d",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,2084.66)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c6709b5c-9d66-4a5c-8e7a-fe51062c0d53",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Explore More Pokémon",
+      "targets": [
+        ["linkText=Explore More Pokémon", "linkText"],
+        ["css=.content-block-half > .button", "css:finder"],
+        ["xpath=//a[contains(text(),'Explore More Pokémon')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/us/pokedex/')])[11]", "xpath:href"],
+        ["xpath=//section[5]/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Explore More Pokémon')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "40e7ec3f-f807-492a-a9b4-4d5b6831f6f2",
+      "comment": "",
+      "command": "click",
+      "target": "css=#loadMore > .button-lightblue",
+      "targets": [
+        ["css=#loadMore > .button-lightblue", "css:finder"],
+        ["xpath=//a[@id='loadMore']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Load more Pokémon')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9812ace-99c4-482f-b16a-05409b873954",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,2084.66)",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "6ade48ad-4b85-4988-86f9-f3660ac58d20",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ce91f262-7bf9-4273-a926-9541666c0b8e"]
+  }],
+  "urls": ["https://www.pokemon.com/us/"],
+  "plugins": []
+}
